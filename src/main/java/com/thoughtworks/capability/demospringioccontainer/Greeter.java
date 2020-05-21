@@ -8,6 +8,7 @@ public class Greeter {
     private final GreetingService greetingService;
 
     public Greeter(GreetingService greetingService) {
+        System.out.println("++++++++ Greeting is instantiating...");
         this.greetingService = greetingService;
     }
 
