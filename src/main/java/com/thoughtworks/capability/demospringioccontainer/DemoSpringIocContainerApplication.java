@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DemoSpringIocContainerApplication {
 
 	public static void main(String[] args) {
+		// remove next line
 		SpringApplication.run(DemoSpringIocContainerApplication.class, args);
 	}
 
