@@ -13,6 +13,8 @@ public class DemoSpringIocContainerApplication {
 		Greeter greeter = applicationContext.getBean(Greeter.class);
 
 		System.out.println(greeter.greet());
+
+		applicationContext.close();
 	}
 
 }

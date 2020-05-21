@@ -2,6 +2,8 @@ package com.thoughtworks.capability.demospringioccontainer;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PreDestroy;
+
 @Component
 public class GreetingService {
 
@@ -11,5 +13,10 @@ public class GreetingService {
 
     String greet() {
         return "hello world";
+    }
+
+    @PreDestroy
+    public void releaseSomeResources() {
+        System.out.println("++++++++ GreetingService is releasing some resources...");
     }
 }
