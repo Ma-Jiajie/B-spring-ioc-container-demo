@@ -4,8 +4,8 @@ public class Greeter {
 
     private final GreetingService greetingService;
 
-    public Greeter() {
-        greetingService = new GreetingService();
+    public Greeter(GreetingService greetingService) {
+        this.greetingService = greetingService;
     }
 
     public String greet() {
