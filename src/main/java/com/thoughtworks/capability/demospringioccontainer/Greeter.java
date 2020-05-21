@@ -1,5 +1,8 @@
 package com.thoughtworks.capability.demospringioccontainer;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Greeter {
 
     private final GreetingService greetingService;
