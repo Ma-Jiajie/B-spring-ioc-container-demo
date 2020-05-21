@@ -2,6 +2,7 @@ package com.thoughtworks.capability.demospringioccontainer;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 @Component
@@ -13,6 +14,11 @@ public class GreetingService {
 
     String greet() {
         return "hello world";
+    }
+
+    @PostConstruct
+    public void inti() {
+        System.out.println("++++++++ GreetingService is initializing...");
     }
 
     @PreDestroy
