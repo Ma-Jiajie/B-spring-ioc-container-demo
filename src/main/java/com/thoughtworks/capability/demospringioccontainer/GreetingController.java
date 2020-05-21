@@ -5,9 +5,9 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static org.springframework.beans.factory.config.ConfigurableBeanFactory.SCOPE_SINGLETON;
+import static org.springframework.beans.factory.config.ConfigurableBeanFactory.SCOPE_PROTOTYPE;
 
-@Scope(SCOPE_SINGLETON)
+@Scope(SCOPE_PROTOTYPE)
 @RestController
 public class GreetingController {
 
